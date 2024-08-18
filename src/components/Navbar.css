@@ -1,0 +1,16 @@
+/* Navbar container */
+.navbar {
+  display: flex;
+  justify-content: center !important; /* Center content horizontally */
+  align-items: center !important; /* Center content vertically */
+  height: 60px; /* Adjust height as needed */
+  background-color: #fff; /* Background color */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Drop shadow */
+  width: 100%; /* Full width */
+}
+
+/* Logo image */
+.navbar img {
+  height: 47px; /* Adjust size as needed */
+  width: auto; /* Maintain aspect ratio */
+}

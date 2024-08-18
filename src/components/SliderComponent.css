@@ -1,0 +1,137 @@
+.slider-container {
+  background-color: #e9f5fb;
+  padding: 50px 0;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.quote-box {
+  background-color: #fff;
+  padding: 40px 50px;
+  border-radius: 10px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+  width: 50%; /* Adjust width */
+  margin: 0 auto; /* Center the box */
+  position: relative;
+  min-height: 350px;
+  margin-bottom: 20px;
+}
+
+.quote-content {
+  position: relative;
+}
+
+.quote-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #233142;
+  margin-bottom: 50px;
+}
+
+.quote-text {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #6c757d;
+  position: relative;
+  padding: 0 20px;
+}
+
+.quote-icon-left {
+  position: absolute;
+  top: -10px; /* Adjust as needed */
+  left: -10px;
+  font-size: 50px;
+  color: #6c757d;
+}
+
+.quote-icon-right {
+  position: absolute;
+  bottom: -40px; /* Adjust as needed */
+  right: -10px;
+  font-size: 50px;
+  color: #6c757d;
+  transform: rotate(180deg);
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 40px;
+  height: 40px;
+  background-color: #233142;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-control-prev {
+  left: calc(25% - 60px); /* Position left outside the quote-box */
+}
+
+.carousel-control-next {
+  right: calc(25% - 60px); /* Position right outside the quote-box */
+}
+
+.carousel-control-prev-icon-custom,
+.carousel-control-next-icon-custom {
+  color: white;
+  font-size: 20px;
+}
+
+.slider-button {
+  background-color: #233142;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 30px;
+}
+
+.slider-button:hover {
+  background-color: #1a2937;
+}
+
+.carousel-indicators {
+  bottom: -30px; 
+}
+
+.carousel-indicators [data-bs-target] {
+  background-color: #3c4d618d; /* Default bubble color */
+  border-radius: 50%; /* Ensure bubbles are circular */
+  width: 10px; /* Set size of bubbles */
+  height: 10px; /* Set size of bubbles */
+  border: 1px solid #a19b9b; /* Border for inactive indicators */
+  margin-right: 10px;
+}
+
+.slider-container .carousel-indicators .active {
+  background-color: #6c757d; /* Active bubble color */
+  border: 1px solid #333333; /* Border for active indicator */
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+}
+
+@media (max-width: 768px){
+  .slider-container{
+    padding: 10px;
+  }
+
+  .quote-box{
+    padding: 10px;
+    width: 90%;
+  }
+
+  .carousel-control-prev {
+    left: calc(15% - 60px); /* Position left outside the quote-box */
+  }
+
+  .carousel-control-next {
+    right: calc(15% - 60px); /* Position right outside the quote-box */
+  }
+}

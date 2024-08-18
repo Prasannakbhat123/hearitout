@@ -1,0 +1,143 @@
+/* Container for the cards */
+.cards-container {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 20px; /* Add space between the dropdown and cards */
+}
+
+/* Card styling */
+.card {
+  background-color: white;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 300px;
+  min-height: 500px; /* Set a fixed height */
+  position: relative;
+  border: 2px solid; /* Border color will be set by CSS variable */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Align content to the top */
+  margin-top: 30px; /* Add margin to give space from the dropdown */
+}
+
+/* Type of the card (category) */
+.type {
+  position: absolute;
+  top: -30px; /* Move outside the card */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: white;
+  padding: 0 8px;
+  font-weight: bold;
+  color: var(--border-color); /* Match the color to the border */
+  margin-bottom: 8px; /* Add some margin below the type */
+  z-index: 1; /* Ensure it stays above other elements */
+}
+
+/* Heading styling */
+.card h3 {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+}
+
+/* Paragraph styling */
+.card p {
+  text-align: left;
+  font-size: 0.9rem;
+  color: #333;
+  margin-bottom: 16px;
+  margin-top: 8px; /* Ensure it starts after the heading */
+  flex-grow: 1; /* Ensure the paragraph grows to take available space */
+}
+
+/* Price styling */
+.price {
+  margin-top: 16px; /* Ensure it has space above it */
+  text-align: center;
+  margin-bottom: 16px; /* Add space below the price to separate it from the button */
+}
+
+.price-old {
+  text-decoration: line-through;
+  color: #333; /* Old price color */
+  font-size: 0.9rem;
+  display: block; /* Ensure it takes full width */
+}
+
+.price-new {
+  color: var(--border-color); /* Match the new price color to the border */
+  font-size: 1.4rem; /* Larger font for new price */
+  font-weight: bold;
+  margin-top: 4px;
+  display: block; /* Ensure it takes full width */
+}
+
+/* Button styling */
+.card-button {
+  display: block;
+  width: 100%;
+  background-color: var(--border-color); /* Match button background to the border color */
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
+  margin-top: auto;
+  position: relative;
+  bottom: 0; /* Align to the bottom of the card */
+  left: 0;
+}
+
+/* Container for the dropdown */
+.dropdown-container {
+  display: flex;
+  justify-content: center; /* Center the dropdown horizontally */
+  margin-bottom: 20px; /* Add some space below the dropdown */
+}
+
+/* Dropdown styling */
+select {
+  background-color: #e0e7ff; /* Match with the desired background color */
+  border: 2px solid #333;
+  border-radius: 8px;
+  padding: 10px;
+  width: 300px; /* Wider dropdown */
+  font-size: 1rem;
+  display: block;
+  /* No need to center the dropdown here; it's centered by its container */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .card {
+    max-width: 100%;
+    margin-top: 50px; /* Ensure enough space for type */
+  }
+
+  .cards-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* Specific card colors for each index */
+.card-blue {
+  --border-color: #0f4170; /* Blue color */
+  border: 2px solid #0f4170 !important; /* Directly set border color */
+}
+
+.card-red {
+  --border-color: #219ebc; /* Red color */
+  border: 2px solid #219ebc !important; /* Directly set border color */
+}
+
+.card-yellow {
+  --border-color: #fb8500; /* Yellow color */
+  border: 2px solid #fb8500 !important; /* Directly set border color */
+}

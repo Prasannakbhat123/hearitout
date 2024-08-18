@@ -1,0 +1,79 @@
+/* Center the entire component on the page */
+.section1-container {
+  display: flex;
+  padding-left: 250px;
+  align-items: center;
+  height: auto !important;
+  background-color: #f8f9fa; /* Optional: Add a background color */
+}
+
+.sec1_head {
+  font-size: 19px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  margin-top: 30px;
+}
+
+.form-check {
+  margin-bottom: 15px !important;
+}
+
+.form-check-input:checked {
+  background-color: #00a7a3 !important;
+  border-color: #00a7a3 !important;
+}
+
+.form-check-input:checked + .form-check-label {
+  color: #00a7a3 !important;
+  font-weight: 600;
+}
+
+/* Dropdown Styling */
+.custom-dropdown {
+  width: 800px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin: 50px 0 70px 0;
+  font-size: 16px;
+  color: #6c757d;
+  appearance: none; /* Remove default arrow */
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg xmlns%3D%22http://www.w3.org/2000/svg%22 viewBox%3D%220 0 4 5%22%3E%3Cpath fill%3D%22%236c757d%22 d%3D%22M2 0L0 2h4zm0 5L0 3h4z%22/%3E%3C/svg%3E'); /* Custom arrow */
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 12px 12px;
+}
+
+.custom-dropdown:focus {
+  outline: none;
+  border-color: #00a7a3;
+  color: #00a7a3;
+}
+
+.sec1-button{
+  background-color: #00a7a3;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 30px;
+  width: 120px;
+  
+}
+
+.sec_but_con{
+  background-color: #f8f9fa;
+  padding-bottom: 30px;
+}
+
+@media (max-width: 768px) {
+  .custom-dropdown{
+    width: 300px;
+  }
+
+  .section1-container{
+    padding-left: 40px;
+  }
+}
